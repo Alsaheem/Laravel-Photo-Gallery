@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/logo.png">
+    <script src="fontawesome/js/all.js"></script>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Kontacts-Hub</title>
+</head>
+<body class="bd-body">
+	<header>
+  <!-- navbar -->
+    <nav class="container navbar navbar-expand-sm navbar-light bd-navbar fixed-top py-4">
+        <button type="button" class="btn-outline-transparent btn-transparent navbar-toggler bg-info " data-toggle="collapse" data-target="#nav"><span class="navbar-toggler-icon"></span></button>
+        <a class="navbar-brand text-light" href="#">
+            <i class="fas fa-address-book fa-2x text-info" width="30" height="30" class="d-inline-block align-top"></i>
+            KontactsHub
+        </a>
+        <div class="collapse navbar-collapse justify-content-center" id="nav">
+            <br>
+            <form class="col-md-5" id="myForm">
+				<div class="input-group">
+					<input id="myInput" type="text" data-target="#contact" class="form-control search-input" placeholder="Find a contact...">
+					<button type="button" class="btn btn-white search-button"><i class="fas fa-search text-danger"></i></button>
+				</div>
+			</form>
+        </div>
+        <a href="#" class="fa-lg mr-xl-3"><i class="fas fa-phone"></i></a>
+        <a href="#" class="fa-lg" data-toggle="modal" data-target="#addcontact"><i class="fas fa-user-plus"></i></a>
+    </nav>
+
+	<!-- banner -->
+    <div class="text-light text-md-left text-center banner">
+		<h1 class="display-4 banner-heading">kontacts</h1>
+        <p class="lead banner-par">Your contact book on the go.</p>
+        <!-- <button type="submit" class="btn btn-outline-info">Check Contacts</button> -->
+    </div>
+	<!-- end of banner -->
+</header>
+
+
+  <!-- contacts list -->
+    <div class="row container-fluid" id="contact">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" >
+            <h2 class="text-danger p-3 mt-3 mb-3">Contacts:</h2>
+            <div class="container" id="starting">
+                <div class="row py-3 mb-2 task-border align-items-center">
+                    <div class="col-1 text-muted">
+                        <h3>1.</h3>
+                    </div>
+                    <div class="col-sm-9 col-8" >
+                        <h5><a href="#" data-toggle="modal" data-target="#contact">Adebisi Ayomide</a></h5>
+                        <p>+23470834523456</p>
+                    </div>
+                    <div class="col-1">
+                        <a href="#"><i class="fas fa-phone fa-lg text-danger mr-2"></i></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row py-3 mb-2 task-border align-items-center">
+                    <div class="col-1 text-muted">
+                        <h3>2.</h3>
+                    </div>
+                    <div class="col-sm-9 col-8">
+                        <h5><a href="#" data-toggle="modal" data-target="#contact">Lamina Itunu</a></h5>
+                        <p>+23470834523456</p>
+                    </div>
+                    <div class="col-1">
+                        <a href="#"><i class="fas fa-phone fa-lg text-danger mr-2"></i></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="container" >
+                <div class="row py-3 mb-2 task-border align-items-center">
+                    <div class="col-1 text-muted">
+                        <h3>3.</h3>
+                    </div>
+                    <div class="col-sm-9 col-8">
+                        <h5><a href="#" data-toggle="modal" data-target="#contact">Anyi Jonathan</a></h5>
+                        <p>+23470834523456</p>
+                    </div>
+                    <div class="col-1">
+                        <a href="#"><i class="fas fa-phone fa-lg text-danger mr-2"></i></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row py-3 mb-2 task-border align-items-center">
+                    <div class="col-1 text-muted">
+                        <h3>4.</h3>
+                    </div>
+                    <div class="col-sm-9 col-8">
+                        <h5><a href="#" data-toggle="modal" data-target="#contact">Olumide Maleem</a></h5>
+                        <p>+23470834523456</p>
+                    </div>
+                    <div class="col-1">
+                        <a href="#"><i class="fas fa-phone fa-lg text-danger mr-2"></i></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+  <!-- end of contacts list -->
+
+
+  <!-- contact Modal -->
+    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactTitle">KontactsHub</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/itunu.jpg" width="70" height="70">
+                        </div>
+                        <div class="col-8">
+                            <h5><a href="#" >Adebisi Ayomide</a></h5>
+                            <p><i class="fas fa-phone"></i> +23470834523456</p>
+                            <p><i class=""></i>abc@html.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="" class="" data-dismiss="modal"><i class="fas fa-edit"></i></a>
+                    <a href="" class=""><i class="fas fa-check"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of contact modal -->
+
+    <!-- add contact modal -->
+    <div class="modal fade" id="addcontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add New Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputName">Name</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputPhone">Phone</label>
+                                <input type="tel" class="form-control" id="inputPhone" placeholder="Mobile">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPhone2">Phone</label>
+                                <input type="tel" class="form-control" id="inputPhone2" placeholder="Home">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor">
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Favourite
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- end of add contact modal -->
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container-fluid align-items-center">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                    <div class="row pt-3">
+                        <div class="col-lg-6 text-center"></div>
+                        <div class="col-lg-6 text-center">
+                            <p>&copy; 2019 Copyright. Made With <i class="fas fa-heart text-danger"></i> by <a href="#" class="text-danger">codefreakie</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <script src="script.js"></script>
+    <script src="bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
+
+
